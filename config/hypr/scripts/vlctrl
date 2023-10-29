@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [[ $1 == "increase" ]]; then
+    amixer set Master 5%+ unmute
+elif [[ $1 == "decrease" ]]; then
+    amixer set Master 5%- unmute
+fi
